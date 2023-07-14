@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>p page</title>
+</head>
+<body bg color="grey">
+  <style>
+  body{ background-image :url(T.jpg);background-repeat: repeat;background-size:95%;}
+  h1{color:black ;}
+  form{text-align: center;color: black;}
+  </style>
+   <form action="p.php" method="post" > 
+   <h4> Name: <input type="text" name="name" required><br><br> 
+    Gender:<input type="radio" name="gender" value="M" required> Male
+    
+     <input type="radio" name="gender" value="F" required> Female<br><br>
+    
+    Address:><div><textarea rows="3" cols="15" name="address" required placeholder="write your address here..."></textarea></div><br><br> 
+    Product receiving date:  <input type="date" name="receivedate" ><br><br>
+    Choose Product:
+    <select name="product" >
+      <option value=" ">-->Select the Product<--</option> 
+      <option value="RO">RO-[Aquafresh,Durafresh,Biogaurd]</option>
+      <option value="GEYSER">GEYSER-[Amkash]</option>
+      <option value="CHIMNEY">CHIMNEY-[Sunflame,Hindware,Durafresh]</option>
+      <option value="INVERTER">INVERTER-[Livguard]</option>
+      </select>
+      Mobile No : <input  type="number" name="contact">&nbsp;&nbsp;<p></p><br><br>
+    </select><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input type="submit" value="Submit" onclick="run()" name="submit" > <input type="reset" value="Clear all"><br><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a href="homepage.html"><input type="button" value="Back to home"/></a>
+</h4>
+</form> 
+
+</body>
+<script>
+      
+  let inp=document.querySelector('.m');
+  let out=document.querySelector('p');
+  inp.addEventListener('keyup',function()
+  {
+      if((inp.value).length==10)
+       {out.textContent="valid";}
+         else
+          {out.textContent="Enter a valid number";}
+  }                   )
+
+  
+
+</script>
+</html
+
+
+
